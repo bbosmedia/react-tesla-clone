@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header__center, .header__right{
+    display: flex;
+    align-items: center;
+}
+
+.header__right{
+    text-transform: uppercase;
+}
+
+.header__center p, .header__right p{
+    padding: 0 10px;
+}
