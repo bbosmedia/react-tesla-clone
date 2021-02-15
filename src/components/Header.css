@@ -3,7 +3,7 @@
     align-items: center;
     background: transparent;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 15px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,15 +11,32 @@
     z-index: 100;
 }
 
+.header__logo img{
+    height: 17px;
+}
+
 .header__center, .header__right{
     display: flex;
     align-items: center;
 }
 
-.header__right{
+.header__right, .header__center{
     text-transform: uppercase;
 }
 
 .header__center p, .header__right p{
     padding: 0 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1100px){
+    .header__center{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header__rightLink{
+        display: none;
+    }
 }

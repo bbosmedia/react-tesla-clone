@@ -18,8 +18,8 @@ const Header = () => {
                 <p>Solar Panel</p>
             </div>
             <div className="header__right">
-                <p>Shop</p>
-                <p>Tesla Account</p>
+                <p className="header__rightLink">Shop</p>
+                <p className="header__rightLink">Tesla Account</p>
                 <p><MenuIcon /></p>
             </div>
         </header>

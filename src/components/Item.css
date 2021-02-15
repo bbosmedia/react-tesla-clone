@@ -1,0 +1,104 @@
+.item{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    padding-top: 150px;
+    color: #333;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+
+
+.item__title{
+    font-size: 36px;
+}
+
+.item__darkBtn{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.item__descLink{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.item__lowerThird{
+    position: absolute;
+    bottom: 75px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.item__buttons{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 12px 0;
+    width: 250px;
+    border-radius: 50px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+}
+
+.btn-dark{
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-dark-70{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+}
+
+.btn-white-70{
+    background-color: rgba(255,255,255,0.8);
+    color: #333;
+}
+
+@media screen and (max-width: 650px){
+    .item__buttons{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .btn{
+        display: block;
+        font-size: 12px;
+    }
+
+    .btn-dark-70{
+        margin-bottom: 10px;
+    }
+    .item__lowerThird{
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .item__title{
+        font-size: 27px;
+    }
+
+    .item__textDesc{
+        font-size: 14px;
+    }
+
+    .item{
+        padding-top: 100px;
+    }
+}
